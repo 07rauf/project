@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
 
+
 const Home = () => {
   const [user, setUser] = useState(null);
   const [showProfile, setShowProfile] = useState(false);
@@ -24,8 +25,9 @@ const Home = () => {
       <nav className="navbar">
         <div className="nav-logo">Logo</div>
         <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#main">Əsas səhifə</a>
+          <a href="#about">Haqqımızda</a>
+          <a href="#contact">Əlaqə</a>
           <a href="#vacancies">Vakansiyalar</a>
         </div>
         {user && (
