@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e2a78;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e2a78;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1e2a78;
+  transition: color 0.3s;
+}
+
+.nav-profile:hover {
+  color: #0056b3;
+}
+
+.nav-profile-avatar {
+  width: 34px;
+  height: 34px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+.content {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-modal {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  z-index: 2000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.logout-button {
+  margin-top: 20px;
+  background-color: #dc2f55;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c62828;
+}
